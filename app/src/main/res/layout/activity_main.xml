@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/sdf"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.john6.chapterview.ChapterView
+        android:id="@+id/chapter_view"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        app:want_chapter_title="true"
+        app:want_chapter_content="true"
+        app:want_chapter_bullet="true"
+        app:want_chapter_line="true"
+        app:chapter_title_text="@string/chapter_title"
+        app:chapter_content_text="@array/chapter_content"
+        app:chapter_content_single_line="false"
+        app:chapter_content_line_spacing="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,3 @@
+include ':chapterview'
+include ':app'
+rootProject.name = "DemoChapterView"
